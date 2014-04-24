@@ -12,11 +12,13 @@
   </head>
   <body>
     <div class="site">
-      <div class="header">
+      <div class="nav">
         <h1 class="title"><a href="/">{{ site.name }}</a></h1>
         {% include menu.html %}
       </div>
+      <div class='content'>
       {{ content }}
+      </div>
       <div class="footer">
         <div class="contact">
           <p>

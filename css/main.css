@@ -4,6 +4,9 @@
 /*
 /*****************************************************************************/
 
+/* Fonts */
+@import url(http://fonts.googleapis.com/css?family=Rock+Salt);
+
 /* Global Reset */
 * {
   margin: 0;
@@ -14,9 +17,8 @@ html, body { height: 100%; }
 
 body {
   background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
+  font: 1rem Helvetica, Arial, sans-serif;
   font-size: small;
-  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -56,38 +58,56 @@ a:visited { color: #a0a; }
 /*****************************************************************************/
 
 .site {
-  font-size: 115%;
-  text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
+  min-height: 100%;
+  position: relative;
 }
 
-.header a {
+.content {
+  margin: 1%;
+  padding-bottom: 60px;
+}
+
+.nav a {
   font-weight: bold;
   text-decoration: none;
 }
 
+.nav {
+  background: #EEEEEE;
+  padding: 10px;
+  height: 40px;
+}
+
 .title {
   display: inline-block;
-  margin-bottom: 2em;
+  font-size: 1.7em;
+  height:100%;
+  float:left;
 }
 
 .title a {
-  color: #a00;
+  font-family: 'Rock Salt';
+  color: #540779;
+  width: auto;
+  margin: 0 20px;
 }
 
 .title a:hover {
-  color: #000;
+  color: #90112F;
 }
 
-.header a.extra {
+.menu {
+  float:right;
+  position:relative;
+}
+
+.nav a.extra {
   color: #aaa;
   margin-left: 1em;
 }
 
-.header a.extra:hover {
-  color: #000;
+.nav a.extra:hover {
+  color: #aaa;
 }
 
 .meta {
@@ -100,11 +120,15 @@ a:visited { color: #a0a; }
   border-top: 4px solid #eee;
   margin-top: 2em;
   overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
 }
 
 .footer .contact {
   float: left;
-  margin-right: 3em;
+  margin: 0 2em;
 }
 
 .footer .contact a {
