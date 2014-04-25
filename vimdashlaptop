@@ -29,31 +29,32 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +13 _layouts/default.html
+badd +11 _layouts/default.html
 badd +1 css/main.css
 badd +6 index.html
 badd +2 _includes/menu.html
-badd +0 _posts/2014-04-23-welcome-to-jekyll.markdown
+badd +7 _posts/2014-04-23-welcome-to-jekyll.markdown
+badd +0 css/home.css
 args _layouts/default.html
-edit css/main.css
+edit css/home.css
 set splitbelow splitright
 wincmd _ | wincmd |
 vsplit
 1wincmd h
-wincmd w
 wincmd _ | wincmd |
 split
 1wincmd k
+wincmd w
 wincmd w
 set nosplitbelow
 set nosplitright
 wincmd t
 set winheight=1 winwidth=1
-exe 'vert 1resize ' . ((&columns * 35 + 56) / 112)
-exe '2resize ' . ((&lines * 32 + 33) / 67)
-exe 'vert 2resize ' . ((&columns * 76 + 56) / 112)
-exe '3resize ' . ((&lines * 32 + 33) / 67)
-exe 'vert 3resize ' . ((&columns * 76 + 56) / 112)
+exe '1resize ' . ((&lines * 18 + 19) / 39)
+exe 'vert 1resize ' . ((&columns * 47 + 75) / 150)
+exe '2resize ' . ((&lines * 18 + 19) / 39)
+exe 'vert 2resize ' . ((&columns * 47 + 75) / 150)
+exe 'vert 3resize ' . ((&columns * 102 + 75) / 150)
 argglobal
 setlocal keymap=
 setlocal noarabic
@@ -156,15 +157,15 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 112 - ((60 * winheight(0) + 32) / 65)
+let s:l = 9 - ((5 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-112
+9
 normal! 0
 wincmd w
 argglobal
-edit _posts/2014-04-23-welcome-to-jekyll.markdown
+edit css/main.css
 setlocal keymap=
 setlocal noarabic
 setlocal noautoindent
@@ -194,8 +195,8 @@ setlocal nodiff
 setlocal equalprg=
 setlocal errorformat=
 setlocal expandtab
-if &filetype != 'markdown'
-setlocal filetype=markdown
+if &filetype != 'css'
+setlocal filetype=css
 endif
 setlocal foldcolumn=0
 setlocal foldenable
@@ -253,8 +254,8 @@ setlocal statusline=
 setlocal suffixesadd=
 setlocal swapfile
 setlocal synmaxcol=3000
-if &syntax != 'markdown'
-setlocal syntax=markdown
+if &syntax != 'css'
+setlocal syntax=css
 endif
 setlocal tabstop=2
 setlocal tags=
@@ -266,12 +267,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 12 - ((11 * winheight(0) + 16) / 32)
+let s:l = 101 - ((5 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-12
-normal! 0
+101
+normal! 03|
 wincmd w
 argglobal
 edit index.html
@@ -376,19 +377,18 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 3 - ((1 * winheight(0) + 16) / 32)
+let s:l = 8 - ((7 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-3
-normal! 014|
+8
+normal! 0
 wincmd w
-2wincmd w
-exe 'vert 1resize ' . ((&columns * 35 + 56) / 112)
-exe '2resize ' . ((&lines * 32 + 33) / 67)
-exe 'vert 2resize ' . ((&columns * 76 + 56) / 112)
-exe '3resize ' . ((&lines * 32 + 33) / 67)
-exe 'vert 3resize ' . ((&columns * 76 + 56) / 112)
+exe '1resize ' . ((&lines * 18 + 19) / 39)
+exe 'vert 1resize ' . ((&columns * 47 + 75) / 150)
+exe '2resize ' . ((&lines * 18 + 19) / 39)
+exe 'vert 2resize ' . ((&columns * 47 + 75) / 150)
+exe 'vert 3resize ' . ((&columns * 102 + 75) / 150)
 tabnext 1
 if exists('s:wipebuf')
   silent exe 'bwipe ' . s:wipebuf

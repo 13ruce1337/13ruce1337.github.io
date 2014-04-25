@@ -1,0 +1,20 @@
+.posts {
+  list-style-type: none;
+}
+
+.posts li {
+  background: green;
+  width: 100%;
+  display: inline-block;
+  line-height: 1.75rem;
+}
+
+.posts span {
+  color: #aaa;
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 80%;
+}
+
+.home {
+  height: 100%;
+}
