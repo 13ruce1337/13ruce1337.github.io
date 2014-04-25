@@ -1,5 +1,6 @@
 .posts {
   list-style-type: none;
+  height:100%;
 }
 
 .posts li {
@@ -7,14 +8,11 @@
   width: 100%;
   display: inline-block;
   line-height: 1.75rem;
+  height:100%;
 }
 
 .posts span {
   color: #aaa;
   font-family: Monaco, "Courier New", monospace;
   font-size: 80%;
-}
-
-.home {
-  height: 100%;
 }
