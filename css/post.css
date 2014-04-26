@@ -1,9 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Averia+Sans+Libre:400,700);
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
 
-h2 {
-  font-size:2em;
+h3 {
+  font-size:2rem;
   font-family:'Averia Sans Libre', 'cursive';
   text-align:center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: 'Source Code Pro', monaco;
 }
 
 .post_content {
