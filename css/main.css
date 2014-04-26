@@ -24,7 +24,9 @@ body {
   font: 1rem Helvetica, Arial, sans-serif;
 }
 
-p { margin: 0.5rem 0; }
+p {
+  margin: 0.5rem 0;
+}
 
 a { 
   color: #3768B9;

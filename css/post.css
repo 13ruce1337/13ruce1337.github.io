@@ -1,6 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Averia+Sans+Libre:400,700);
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
 
+p {
+  line-height:1.3rem;
+}
+
+li {
+  line-height:2rem;
+}
+
 h3 {
   font-size:2rem;
   font-family:'Averia Sans Libre', 'cursive';

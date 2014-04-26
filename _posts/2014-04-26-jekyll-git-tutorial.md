@@ -11,7 +11,7 @@ img: /imgs/jekyll_logo.png
   <img src='{{site.base}}/imgs/jekyll_logo.png' width='auto' height='auto'/>
 </div>
 
-Seeing as how [GitHub][GitHub] is free and amazing, I chose to host my page on it. [GitHub Pages(GH-Pages)][GH-Pages], allows you to generate a webpage using their free repository hosting. This is a tutorial on how to get up and running on GH-Pages using [Jekyll][Jekyll].
+Seeing as how [GitHub][GitHub] is free and amazing, I chose to host my page on it. [GitHub Pages(GH-Pages)][GH-Pages] allows you to generate a webpage using Github's free repository hosting. This is a tutorial on how to get up and running on GH-Pages using [Jekyll][Jekyll].
 
 Tools
 ---
@@ -19,7 +19,7 @@ Tools
 - [GitHub account](https://github.com/join)
 - Commandline Tool (This will reference Linux. Windows and Mac OS is not much different. I will try my best to accommodate as much as possible.)
 - Editor (I use [VIM](http://www.vim.org/download.php). Some use [Sublime](http://www.sublimetext.com/). Find what's right for you.)
-- Some knowledge of HTML, CSS, and command line
+- Some knowledge of HTML, CSS, Markdown and command line
 
 <br/>
 
