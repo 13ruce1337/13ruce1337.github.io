@@ -12,20 +12,18 @@
     <link rel="stylesheet" href={{ page.css }}>
   </head>
   <body>
-    <div class="site">
-      <div class="nav">
-        <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-        {% include menu.html %}
-      </div>
-      <div class='content'>
-      {{ content }}
-      </div>
-      <div class="footer">
-        <div class="contact">
-          <p>
-            <a href="https://github.com/13ruce1337"><img width='32' height='32' src='{{ site.baseurl }}/imgs/github_logo.png'/></a>
-          </p>
-        </div>
+    <div class="nav">
+      <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+      {% include menu.html %}
+    </div>
+    <div class='content'>
+    {{ content }}
+    </div>
+    <div class="footer">
+      <div class="contact">
+        <p>
+          <a href="https://github.com/13ruce1337"><img width='32' height='32' src='{{ site.baseurl }}/imgs/github_logo.png'/></a>
+        </p>
       </div>
     </div>
   </body>

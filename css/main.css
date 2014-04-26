@@ -13,18 +13,17 @@
   padding: 0;
 }
 
-html, body { height: 100%; }
+html, body { 
+  height: 100%;
+  position: relative;
+}
 
 body {
   background-color: #FFF;
   font: 1rem Helvetica, Arial, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; 
-}
-
-p { margin: 1em 0; }
+p { margin: 0.5rem 0; }
 
 a         { color: #00a; }
 a:hover   { color: #000; }
@@ -36,15 +35,11 @@ a:visited { color: #a0a; }
 /*
 /*****************************************************************************/
 
-.site {
-  min-height: 100%;
-  position: relative;
-}
-
 .content {
-  margin: 1%;
-  padding-bottom: 60px;
-  height:100%;
+  position:absolute;
+  overflow:auto;
+  height:calc(100% - 109px);
+  width:100%;
 }
 
 .nav a {
@@ -90,7 +85,8 @@ a:visited { color: #a0a; }
 }
 
 .home {
-  height: 100%;
+  height:100%;
+  width:100%;
 }
 
 .meta {
