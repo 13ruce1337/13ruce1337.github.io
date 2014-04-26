@@ -4,7 +4,7 @@ title:  "Growing Fast"
 date:   2014-04-24 14:53:07
 categories:
 - Technical
-img: ./imgs/jekyll_logo.png
+img: /imgs/jekyll_logo.png
 ---
 
 [![Jekyll]({{site.base}}/imgs/jekyll_logo.png)][jekyll]

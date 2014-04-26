@@ -6,7 +6,7 @@ css: ./css/home.css
 <div class='home'>
   <ul class="posts">
     {% for post in site.posts %}
-      <li style='background: url({{post.img}}) no-repeat center;'>
+      <li style='background: url({{site.base}}{{post.img}}) no-repeat center;'>
         <a class='super_link' href="{{post.url}}"></a>
         <div class='post_info'>
           <span class='date'>{{ post.date | date_to_string }}</span> 
