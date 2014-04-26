@@ -3,13 +3,18 @@
 h2 {
   font-size:2em;
   font-family:'Averia Sans Libre', 'cursive';
+  text-align:center;
 }
 
 .post_content {
-  text-align:center;
   height:100%;
 }
 
 .post {
-  padding:0 20%;
+  padding:0 10%;
+}
+
+.post_date {
+  color: #aaa;
+  text-align:center;
 }

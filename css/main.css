@@ -26,9 +26,13 @@ body {
 
 p { margin: 0.5rem 0; }
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+a { 
+  color: #3768B9;
+}
+
+a:visited {
+  color: #540779;
+}
 
 /*****************************************************************************/
 /*
@@ -88,10 +92,6 @@ a:visited { color: #a0a; }
 .home {
   height:100%;
   width:100%;
-}
-
-.meta {
-  color: #aaa;
 }
 
 .footer {
