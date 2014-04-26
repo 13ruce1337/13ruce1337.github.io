@@ -18,13 +18,12 @@ html, body { height: 100%; }
 body {
   background-color: #FFF;
   font: 1rem Helvetica, Arial, sans-serif;
-  font-size: small;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
+  font-size: 100%; 
+}
 
-h1 { margin-bottom: 1em; }
 p { margin: 1em 0; }
 
 a         { color: #00a; }
@@ -61,8 +60,8 @@ a:visited { color: #a0a; }
 
 .title {
   display: inline-block;
-  font-size: 1.7rem;
-  float:left;
+  font-size: 1.2rem;
+  float: left;
 }
 
 .title a {
@@ -116,16 +115,6 @@ a:visited { color: #a0a; }
 
 .footer .contact a {
   color: #8085C1;
-}
-
-.footer .rss {
-  margin-top: 1.1em;
-  margin-right: -.2em;
-  float: right;
-}
-
-.footer .rss img {
-  border: 0;
 }
 
 /*****************************************************************************/
