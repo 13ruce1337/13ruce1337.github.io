@@ -1,0 +1,15 @@
+@import url(http://fonts.googleapis.com/css?family=Averia+Sans+Libre:400,700);
+
+h2 {
+  font-size:2em;
+  font-family:'Averia Sans Libre', 'cursive';
+}
+
+.post_content {
+  text-align:center;
+  height:100%;
+}
+
+.post {
+  padding:0 20%;
+}

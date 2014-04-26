@@ -9,8 +9,8 @@ img: /imgs/jekyll_logo.png
 
 [![Jekyll]({{site.base}}/imgs/jekyll_logo.png)][jekyll]
 
-Learning as I go!
+Seeing as how [GitHub][GitHub] is free and amazing, I chose to host my page on it. [GitHub Pages(GH-Pages)][GH-Pages], allows you to generate a webpage using their free repository hosting. This is a tutorial on how to get up and running on GH-Pages using [Jekyll][Jekyll].
 
-Check out the [Jekyll docs][jekyll] for more info on Jekyll. 
-
-[jekyll]:    http://jekyllrb.com
+[GitHub]:     (https://github.com/)
+[GH-Pages]:   (https://pages.github.com/)
+[jekyll]:     (http://jekyllrb.com/)

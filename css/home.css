@@ -13,11 +13,12 @@
   width:100%;
   height:100%;
   text-align:center; 
+  overflow:auto;
 }
 
 .posts .post_pic a {
   display:inline-block;
-  margin:25% 25%;
+  margin:20% 0;
 }
 
 .posts .super_link {
