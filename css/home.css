@@ -7,7 +7,12 @@
   display: inline-block;
   width: 100%;
   height: 99.4%;
-  background: url({{post.img}}) no-repeat center;
+}
+
+.super_link {
+  display:block;
+  width:100%;
+  height:100%;
 }
 
 .post_info {
