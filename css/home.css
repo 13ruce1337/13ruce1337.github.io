@@ -9,10 +9,20 @@
   height: 99.4%;
 }
 
-.super_link {
-  display:block;
+.posts .post_pic {
   width:100%;
   height:100%;
+  text-align:center; 
+}
+
+.posts .post_pic a {
+  display:inline-block;
+  margin:10% 5%;
+}
+
+.posts .super_link {
+  width:auto;
+  height:auto;
 }
 
 .post_info {
