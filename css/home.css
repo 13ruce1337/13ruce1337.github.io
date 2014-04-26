@@ -4,16 +4,17 @@
 }
 
 .posts li {
-  background: green;
   display: inline-block;
   width: 100%;
   height: 99.4%;
+  background: url({{post.img}}) no-repeat center;
 }
 
 .post_info {
   bottom:10px;
   position:absolute;
   width:100%;
+  line-height:250%;
 }
 
 .post_info .date {
@@ -21,16 +22,22 @@
   font-family: Monaco, "Courier New", monospace;
   font-size: 80%;
   float:left;
-  margin-left:15px;
+  margin-left:20px;
 }
 
 .post_info .post_title {
   float:right;
-  margin-right:15px;
+  margin-right:20px;
+  font-family: 'Source Code Pro';
+  color: #C4BFBC;
+  font-size:1.3rem;
 }
 
 .post_info .post_title a {
   text-decoration:none;
-  color: white;
-  font-family: 'Source Code Pro';
+  color: #540779;
+}
+
+.post_info .post_title a:hover {
+  color: #90112F;
 }

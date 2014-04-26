@@ -24,8 +24,10 @@ endif
 set shortmess=aoO
 badd +1 index.html
 badd +1 css/main.css
-badd +1 _layouts/default.html
+badd +17 _layouts/default.html
 badd +1 css/home.css
+badd +0 _posts/2014-04-23-jekyll-intro.md
+badd +1 _layouts/post.html
 args index.html
 edit css/home.css
 set splitbelow splitright
@@ -149,12 +151,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 34 - ((23 * winheight(0) + 13) / 26)
+let s:l = 41 - ((23 * winheight(0) + 13) / 26)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-34
-normal! 013l
+41
+normal! 024l
 wincmd w
 argglobal
 edit css/main.css
@@ -253,15 +255,15 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 9 - ((8 * winheight(0) + 13) / 26)
+let s:l = 65 - ((3 * winheight(0) + 13) / 26)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-9
-normal! 067l
+65
+normal! 02l
 wincmd w
 argglobal
-edit _layouts/default.html
+edit _posts/2014-04-23-jekyll-intro.md
 setlocal noautoindent
 setlocal nobinary
 setlocal bufhidden=
@@ -287,8 +289,8 @@ setlocal nodiff
 setlocal equalprg=
 setlocal errorformat=
 setlocal expandtab
-if &filetype != 'html'
-setlocal filetype=html
+if &filetype != 'modula2'
+setlocal filetype=modula2
 endif
 setlocal foldcolumn=0
 setlocal foldenable
@@ -343,8 +345,8 @@ setlocal statusline=
 setlocal suffixesadd=
 setlocal swapfile
 setlocal synmaxcol=3000
-if &syntax != 'html'
-setlocal syntax=html
+if &syntax != 'modula2'
+setlocal syntax=modula2
 endif
 setlocal tabstop=8
 setlocal tags=
@@ -356,12 +358,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 25 - ((13 * winheight(0) + 13) / 26)
+let s:l = 7 - ((5 * winheight(0) + 13) / 26)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-25
-normal! 059l
+7
+normal! 026l
 wincmd w
 argglobal
 edit index.html
@@ -459,12 +461,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 12 - ((11 * winheight(0) + 13) / 26)
+let s:l = 8 - ((7 * winheight(0) + 13) / 26)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-12
-normal! 047l
+8
+normal! 017l
 wincmd w
 exe '1resize ' . ((&lines * 26 + 27) / 55)
 exe 'vert 1resize ' . ((&columns * 40 + 85) / 170)
