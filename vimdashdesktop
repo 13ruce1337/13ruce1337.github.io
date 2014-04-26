@@ -25,7 +25,7 @@ set shortmess=aoO
 badd +1 index.html
 badd +1 css/main.css
 badd +1 _layouts/default.html
-badd +0 css/home.css
+badd +1 css/home.css
 args index.html
 edit css/home.css
 set splitbelow splitright
@@ -149,11 +149,11 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 3 - ((2 * winheight(0) + 13) / 26)
+let s:l = 34 - ((23 * winheight(0) + 13) / 26)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-3
+34
 normal! 013l
 wincmd w
 argglobal
@@ -253,12 +253,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 92 - ((0 * winheight(0) + 13) / 26)
+let s:l = 9 - ((8 * winheight(0) + 13) / 26)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-92
-normal! 0
+9
+normal! 067l
 wincmd w
 argglobal
 edit _layouts/default.html
@@ -361,7 +361,7 @@ if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 25
-normal! 063l
+normal! 059l
 wincmd w
 argglobal
 edit index.html
@@ -464,9 +464,8 @@ if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 12
-normal! 0
+normal! 047l
 wincmd w
-4wincmd w
 exe '1resize ' . ((&lines * 26 + 27) / 55)
 exe 'vert 1resize ' . ((&columns * 40 + 85) / 170)
 exe '2resize ' . ((&lines * 26 + 27) / 55)
