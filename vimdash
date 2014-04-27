@@ -22,17 +22,13 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +19 index.html
-badd +1 css/main.css
-badd +17 _layouts/default.html
-badd +31 css/home.css
-badd +4 _posts/2014-04-23-jekyll-intro.md
-badd +9 _layouts/post.html
-badd +1 css/post.css
-badd +42 _posts/2014-04-26-jekyll-git-tutorial.md
-badd +1 _posts/2014-04-26-acer-c720.md
-args index.html
-edit css/post.css
+badd +10 scripts/index.js
+badd +22 _layouts/default.html
+badd +0 index.html
+badd +12 css/main.css
+badd +0 css/home.css
+args scripts/index.js
+edit css/home.css
 set splitbelow splitright
 wincmd _ | wincmd |
 vsplit
@@ -104,7 +100,7 @@ setlocal matchpairs=(:),{:},[:]
 setlocal modeline
 setlocal modifiable
 setlocal nrformats=octal,hex
-setlocal number
+setlocal nonumber
 setlocal numberwidth=4
 setlocal omnifunc=
 setlocal path=
@@ -139,15 +135,15 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 5 - ((4 * winheight(0) + 26) / 53)
+let s:l = 75 - ((25 * winheight(0) + 26) / 53)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-5
-normal! 016l
+75
+normal! 08l
 wincmd w
 argglobal
-edit _posts/2014-04-26-acer-c720.md
+edit index.html
 setlocal noautoindent
 setlocal nobinary
 setlocal bufhidden=
@@ -173,8 +169,8 @@ setlocal nodiff
 setlocal equalprg=
 setlocal errorformat=
 setlocal expandtab
-if &filetype != 'modula2'
-setlocal filetype=modula2
+if &filetype != 'html'
+setlocal filetype=html
 endif
 setlocal foldcolumn=0
 setlocal foldenable
@@ -229,8 +225,8 @@ setlocal statusline=
 setlocal suffixesadd=
 setlocal swapfile
 setlocal synmaxcol=3000
-if &syntax != 'modula2'
-setlocal syntax=modula2
+if &syntax != 'html'
+setlocal syntax=html
 endif
 setlocal tabstop=8
 setlocal tags=
@@ -242,12 +238,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 74 - ((47 * winheight(0) + 26) / 53)
+let s:l = 20 - ((19 * winheight(0) + 26) / 53)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-74
-normal! 0
+20
+normal! 013l
 wincmd w
 2wincmd w
 exe 'vert 1resize ' . ((&columns * 30 + 85) / 170)

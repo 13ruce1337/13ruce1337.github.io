@@ -58,3 +58,20 @@
 .post_info .post_title a:hover {
   color: #90112F;
 }
+
+.scroll {
+  width:32px;
+  height:32px;
+  background-color:transparent;
+  margin:60% 0;
+  cursor:pointer;
+}
+
+.scroll_arrows {
+  width:64px;
+  height:auto;
+  position:fixed;
+  z-index:10;
+  right:0;
+  top:25%;
+}
