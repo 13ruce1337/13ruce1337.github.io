@@ -65,8 +65,11 @@
   width:32px;
   height:32px;
   background-color:transparent;
-  margin:60% 0;
   cursor:pointer;
+  border-radius:50px;
+  margin:100% 0;
+  -webkit-transition:background-color 1s;
+  transition:background-color 0.5s;
 }
 
 .scroll_arrows {
@@ -75,5 +78,9 @@
   position:fixed;
   z-index:10;
   right:0;
-  top:25%;
+  top:10%;
+}
+
+.scroll:hover {
+  background:#340067;
 }
