@@ -25,12 +25,12 @@ set shortmess=aoO
 badd +19 index.html
 badd +1 css/main.css
 badd +17 _layouts/default.html
-badd +39 css/home.css
+badd +31 css/home.css
 badd +4 _posts/2014-04-23-jekyll-intro.md
 badd +4 _layouts/post.html
-badd +24 css/post.css
+badd +1 css/post.css
 badd +1 _posts/2014-04-26-jekyll-git-tutorial.md
-badd +0 _posts/2014-04-26-acer-c720.md
+badd +1 _posts/2014-04-26-acer-c720.md
 args index.html
 edit css/post.css
 set splitbelow splitright
@@ -146,11 +146,11 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 25 - ((24 * winheight(0) + 26) / 53)
+let s:l = 21 - ((20 * winheight(0) + 26) / 53)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-25
+21
 normal! 010l
 wincmd w
 argglobal
@@ -359,7 +359,6 @@ normal! zt
 9
 normal! 01l
 wincmd w
-3wincmd w
 exe 'vert 1resize ' . ((&columns * 50 + 85) / 170)
 exe '2resize ' . ((&lines * 26 + 27) / 55)
 exe 'vert 2resize ' . ((&columns * 119 + 85) / 170)
