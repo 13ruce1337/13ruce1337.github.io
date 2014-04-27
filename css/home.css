@@ -46,13 +46,12 @@
 
 .post_info .post_title {
   font-family: 'Source Code Pro';
-  color: #C4BFBC;
   font-size:1.3rem;
 }
 
 .post_info .post_title a {
   text-decoration:none;
-  color: #540779;
+  color: white;
 }
 
 .post_info .post_title a:hover {
