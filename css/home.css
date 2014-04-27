@@ -9,44 +9,46 @@
   height: 99.4%;
 }
 
-.posts .post_pic {
+.post {
+  position:relative;
+}
+
+.posts .post {
   width:100%;
   height:100%;
   text-align:center; 
   overflow:auto;
 }
 
-.posts .post_pic a {
+.posts .post a {
   display:inline-block;
-  margin:20% 0;
+  height:100%;
+  width:100%;
 }
 
 .posts .super_link {
-  width:auto;
-  height:auto;
+  max-width:100%;
+  height:92%;
 }
 
 .post_info {
-  bottom:10px;
-  position:absolute;
+  position: absolute;
+  bottom:0;
   width:100%;
   line-height:250%;
+  background-color:#43443F;
 }
 
 .post_info .date {
   color: #C4BFBC;
   font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
-  float:left;
-  margin-left:20px;
+  font-size: 0.8rem;
 }
 
 .post_info .post_title {
-  float:right;
-  margin-right:20px;
   font-family: 'Source Code Pro';
   color: #C4BFBC;
-  font-size:1.3rem;
+  font-size:1rem;
 }
 
 .post_info .post_title a {

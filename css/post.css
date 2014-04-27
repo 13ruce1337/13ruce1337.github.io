@@ -21,6 +21,10 @@ h2 {
   font-family: 'Source Code Pro', monaco;
 }
 
+img {
+  max-width:100%;
+}
+
 .post_content {
   height:100%;
 }
