@@ -3,9 +3,11 @@
 
 p {
   line-height:1.3rem;
+  margin:0 10%;
 }
 
 li {
+  margin:0 10%;
   line-height:2rem;
 }
 
@@ -25,12 +27,12 @@ img {
   max-width:100%;
 }
 
-.post_content {
-  height:100%;
+.highlight {
+  margin:0 10%;
 }
 
-.post {
-  padding:0 10%;
+.post_content {
+  height:100%;
 }
 
 .post_date {
