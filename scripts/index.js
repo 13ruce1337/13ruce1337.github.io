@@ -11,7 +11,8 @@ $(function() {
     }
   }
 
-  setInterval(autoScroll, 7000);
+ //auto scroll for front page. 
+ //setInterval(autoScroll, 7000);
 
   scrollDown.click(function() {
     $('.content').animate({scrollTop: itemHeight+'px'});
