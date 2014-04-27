@@ -3,3 +3,4 @@ markdown: redcarpet
 pygments: true
 baseurl: http://13ruce1337.github.io
 permalink: /:categories/:title
+permalink: /:title
