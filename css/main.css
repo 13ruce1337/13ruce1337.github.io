@@ -91,6 +91,11 @@ a:visited {
   color: #aaa;
 }
 
+.menu {
+  float:right;
+  height:100%;
+}
+
 .home {
   height:100%;
   width:100%;
