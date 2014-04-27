@@ -15,10 +15,8 @@ $(function() {
 
   scrollDown.click(function() {
     $('.content').animate({scrollTop: itemHeight+'px'});
-    autoScroll();
   });
   scrollUp.click(function() {
     $('.content').animate({scrollTop: -itemHeight+'px'});
-    autoScroll();
   });
 });
