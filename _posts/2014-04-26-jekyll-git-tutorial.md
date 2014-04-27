@@ -3,7 +3,7 @@ layout: post
 title:  "Jekyll and Git Tutorial"
 date:   2014-04-26 14:53:07
 categories:
-- Technical
+- tech
 img: /imgs/jekyll_logo.png
 ---
 
