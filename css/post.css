@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
 
 p {
-  line-height:1.3rem;
+  line-height:1.5rem;
   margin:0 10%;
 }
 
@@ -21,6 +21,7 @@ h2 {
   text-align: center;
   font-size: 1.3rem;
   font-family: 'Source Code Pro', monaco;
+  line-height:3rem;
 }
 
 img {
