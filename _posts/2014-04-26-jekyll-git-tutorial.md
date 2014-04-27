@@ -23,6 +23,15 @@ Tools
 
 <br/>
 
+[Windows](#windows)
+-
+[Mac OS](#macos) 
+-
+[Linux](#linux)
+-
+
+</br>
+
 The Basics
 ---
 
@@ -32,14 +41,14 @@ Once you've sucessfully created a repository. You should be able to create an in
 
 <br/>
 
-Jekyll
+<a name='windows' href='#windows'>Jekyll</a>
 ---
 
 Now to install Jekyll. This is where it may differ because this references Linux command line. For my Windows buddies out there refer to [Running Jekyll on Windows](http://www.madhur.co.in/blog/2011/09/01/runningjekyllwindows.html). 
 
 <br/>
 
-Mac OS 10.9
+<a name='macos' href='#macos'>Mac OS 10.9</a>
 ---
 Now for Mac OS Mavericks you will need to install Ruby on your user account:
 
@@ -75,7 +84,7 @@ If you aren't, then type: `rvm use x.x.x` x being the version you want(2.1.1 in 
 
 <br/>
 
-Linux
+<a name='linux' href='#linux'>Linux</a>
 ---
 For Linux it is a lot easier. Ruby should already be installed on your distribution. Simply:
 
