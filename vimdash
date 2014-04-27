@@ -22,7 +22,7 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +14 scripts/index.js
+badd +7 scripts/index.js
 badd +27 _layouts/default.html
 badd +1 index.html
 badd +99 css/main.css
@@ -39,8 +39,8 @@ set nosplitbelow
 set nosplitright
 wincmd t
 set winheight=1 winwidth=1
-exe 'vert 1resize ' . ((&columns * 30 + 85) / 170)
-exe 'vert 2resize ' . ((&columns * 139 + 85) / 170)
+exe 'vert 1resize ' . ((&columns * 40 + 75) / 151)
+exe 'vert 2resize ' . ((&columns * 110 + 75) / 151)
 argglobal
 setlocal noautoindent
 setlocal nobinary
@@ -137,12 +137,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 58 - ((47 * winheight(0) + 26) / 53)
+let s:l = 41 - ((40 * winheight(0) + 26) / 53)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-58
-normal! 02l
+41
+normal! 036l
 wincmd w
 argglobal
 edit index.html
@@ -240,16 +240,15 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 18 - ((17 * winheight(0) + 26) / 53)
+let s:l = 16 - ((15 * winheight(0) + 26) / 53)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-18
+16
 normal! 013l
 wincmd w
-2wincmd w
-exe 'vert 1resize ' . ((&columns * 30 + 85) / 170)
-exe 'vert 2resize ' . ((&columns * 139 + 85) / 170)
+exe 'vert 1resize ' . ((&columns * 40 + 75) / 151)
+exe 'vert 2resize ' . ((&columns * 110 + 75) / 151)
 tabnext 1
 if exists('s:wipebuf')
   silent exe 'bwipe ' . s:wipebuf
