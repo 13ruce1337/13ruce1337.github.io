@@ -5,9 +5,9 @@ $(function() {
 
   function autoScroll() {
     if($('.content').scrollTop()+$('.post_info').height() > $('.content').height()) {
-      $('.content').animate({scrollTop: 0});
+      $('.content').animate({scrollTop: 0},3000);
     } else {
-      $('.content').animate({scrollTop: itemHeight+'px'});
+      $('.content').animate({scrollTop: itemHeight+'px'},3000);
     }
   }
 
