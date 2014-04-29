@@ -31,21 +31,10 @@
 .pix {
   text-align:center;
   height:100%;
-  width:100%;
-}
-.pix_list {
-  list-style-type:none;
-  height:100%;
-  width:100%;
-}
-.pix_list li {
-  display:block;
-  height:100%;
-  width:100%;
-  overflow:hidden;
 }
 .pic {
   height:100%;
+  max-width:100%;
 }
 .pix_box_nav {
   width:100%;
