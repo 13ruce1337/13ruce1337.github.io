@@ -112,16 +112,16 @@ a:visited {
   top:0;
   position:absolute;
   width:140px;
-  right:141px;
+  right:135px;
   display:none;
 }
 
 .nav-menu-list li {
   display:inline-block;
   padding:2px;
-  width:140px;
+  width:130px;
   height:100%;
-  border-bottom:1px solid black;
+  border-bottom:1px solid white;
 }
 
 .nav-menu-list li a {
