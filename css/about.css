@@ -72,18 +72,22 @@
   display:table-cell;
   text-align:center;
   height:auto;
+  background:#340067;
   border:1px solid gray;
   width:50%;
+  box-shadow:2px 3px 5px black;
 }
 .about_nav .about_nav_menu a {
   text-decoration:none;
+  font-family:'Alegreya Sans SC';
   display:block;
-  color:#540779;
+  color:white;
   padding:15px 0;
   width:100%;
+  font-size:1.5em;
 }
 .about_nav .about_nav_menu a:hover {
-  color:#540779;
+  color:#C3C3E5;
 }
 
 .resume {
