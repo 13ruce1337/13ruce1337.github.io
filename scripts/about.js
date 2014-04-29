@@ -24,7 +24,6 @@ $(function() {
       $(id).css('box-shadow','1px 2px 10px black');
     },
     nextPic:function() {
-      console.log(pix_box.pix_count);
       if(pix_box.pix_count !== pix_box.pix_length) {
         pix_box.pix_count++;
         pic.attr('src', pix[pix_box.pix_count]);
@@ -34,7 +33,6 @@ $(function() {
       }
     },
     prevPic:function() {
-      console.log(pix_box.pix_count);
       if(pix_box.pix_count != 0) {
         pix_box.pix_count--;
         pic.attr('src', pix[pix_box.pix_count]);
