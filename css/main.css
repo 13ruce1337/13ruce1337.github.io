@@ -12,30 +12,30 @@
 
 /* Global Reset */
 * {
-  margin: 0;
-  padding: 0;
+  margin:0;
+  padding:0;
 }
 
 html, body { 
-  height: 100%;
-  position: relative;
+  height:100%;
+  width:100%;
 }
 
 body {
-  background-color: #FFF;
-  font: 1rem Helvetica, Arial, sans-serif;
+  background-color:#FFF;
+  font:1rem Helvetica, Arial, sans-serif;
 }
 
 p {
-  margin: 0.5rem 0;
+  margin:0.5rem 0;
 }
 
 a { 
-  color: #3768B9;
+  color:#3768B9;
 }
 
 a:visited {
-  color: #90112F;
+  color:#90112F;
 }
 
 /*****************************************************************************/
@@ -45,9 +45,7 @@ a:visited {
 /*****************************************************************************/
 
 .content {
-  position:absolute;
-  overflow:auto;
-  height:calc(100% - 109px);
+  height:100%;
   width:100%;
 }
 
@@ -90,7 +88,6 @@ a:visited {
   height:50px;
   cursor:pointer;
   float:right;
-  position:relative;
 }
 
 .nav-menu-list {
@@ -146,10 +143,11 @@ a:visited {
   cursor:pointer;
 }
 
-.home {
-  height:100%;
-  width:100%;
-}
+/**
+/*
+  footer on ice
+/*
+/*
 
 .footer {
   font-size: 80%;
@@ -170,6 +168,8 @@ a:visited {
 .footer .contact a {
   color: #8085C1;
 }
+
+*/
 
 /*****************************************************************************/
 /*
