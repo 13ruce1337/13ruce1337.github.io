@@ -22,7 +22,8 @@ html, body {
 }
 
 body {
-  font:1rem Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight:300;
 }
 
 p {
@@ -54,8 +55,8 @@ a:visited {
 }
 
 .nav {
-  background: #EEEEEE;
-  height: 50px;
+  background:#E1E1E1;
+  height:50px;
 }
 
 .title {
@@ -141,34 +142,6 @@ a:visited {
   color:#C3C3E5;
   cursor:pointer;
 }
-
-/**
-/*
-  footer on ice
-/*
-/*
-
-.footer {
-  font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
-  overflow: hidden;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 45px;
-}
-
-.footer .contact {
-  float: left;
-  margin: 0 2em;
-}
-
-.footer .contact a {
-  color: #8085C1;
-}
-
-*/
 
 /*****************************************************************************/
 /*
