@@ -5,27 +5,24 @@ p {
   line-height:1.5rem;
   margin:0 10%;
 }
-
-.content li {
-  margin:0 10%;
-  line-height:2rem;
-}
-
 h3 {
   font-size:2rem;
   font-family:'Averia Sans Libre', 'cursive';
   text-align:center;
 }
-
 h2 {
   text-align: center;
   font-size: 1.3rem;
   font-family: 'Source Code Pro', monaco;
   line-height:3rem;
 }
-
 img {
   max-width:100%;
+}
+
+.content li {
+  margin:0 10%;
+  line-height:2rem;
 }
 
 .highlight {
@@ -38,5 +35,9 @@ img {
 
 .post_date {
   color: #aaa;
+  text-align:center;
+}
+
+.subtitle {
   text-align:center;
 }
