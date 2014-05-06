@@ -7,6 +7,41 @@
         <li><a href='http://epihedron.com'>Adventurer</a></li>
       </ul>
     </li>
+    <li>
+      <a>Past Posts</a>
+      <ul class='nav-sub-menu-2'>
+        {% for post in site.posts %}
+          {% capture year %}{{post.date | date: '%y'}}{% endcapture %}
+          {% capture nyear %}{{post.next.date | date: '%y'}}{% endcapture %}
+          {% if year != nyear %}
+            <li>
+              <a>{{post.date | date: '%Y'}}</a>
+              {% capture cyear %}{{post.date | date: '%Y'}}{% endcapture %}
+              <ul class='nav-sub-menu-2-1'>
+                {% for post in site.posts %}
+                  {% capture month %}{{post.date | date: '%b'}}{% endcapture %}
+                  {% capture nmonth %}{{post.next.date | date: '%b'}}{% endcapture %}
+                    {% if month != nmonth && post.date | date: '%Y' == cyear %}
+                      <li>
+                        <a>{{post.date | date: '%b'}}</a>
+                        {% for post in site.posts %}
+                          <ul class='nav-sub-menu-2-1-1'>
+                            {% if post.date | date: '%b' == month %}
+                              <li>
+                                <a>{{post.title}}</a>
+                              </li>
+                            {% endif %}
+                          </ul>
+                        {% endfor %}
+                      </li>
+                    {% endif %}
+                  {% endfor %}
+              </ul>
+            </li>
+            {% endif %}
+        {% endfor %}
+      </ul>
+    </li>
     <li><a href='/about'>About</a></li>
     <li><a href='mailto:trevor@epihedron.com'>Contact</a></li>
   </ul>
