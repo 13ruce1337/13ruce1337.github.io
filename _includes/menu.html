@@ -21,18 +21,20 @@
                 {% for post in site.posts %}
                   {% capture month %}{{post.date | date: '%b'}}{% endcapture %}
                   {% capture nmonth %}{{post.next.date | date: '%b'}}{% endcapture %}
-                    {% if month != nmonth && post.date | date: '%Y' == cyear %}
+                    {% if month != nmonth %}
                       <li>
                         <a>{{post.date | date: '%b'}}</a>
-                        {% for post in site.posts %}
                           <ul class='nav-sub-menu-2-1-1'>
-                            {% if post.date | date: '%b' == month %}
-                              <li>
-                                <a>{{post.title}}</a>
-                              </li>
-                            {% endif %}
+                            {% for post in site.posts %}
+                            {% capture datY %}{{post.date | date: '%Y'}}{% endcapture %}
+                            {% capture datm %}{{post.date | date: '%b'}}{% endcapture %}
+                              {% if month == datm %}
+                                <li>
+                                  <a>{{post.title}} {{datm}}</a>
+                                </li>
+                              {% endif %}
+                            {% endfor %}
                           </ul>
-                        {% endfor %}
                       </li>
                     {% endif %}
                   {% endfor %}
