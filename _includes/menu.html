@@ -30,7 +30,7 @@
                             {% capture datm %}{{post.date | date: '%b'}}{% endcapture %}
                               {% if month == datm %}
                                 <li>
-                                  <a>{{post.title}} {{datm}}</a>
+                                  <a>{{post.title}}</a>
                                 </li>
                               {% endif %}
                             {% endfor %}
