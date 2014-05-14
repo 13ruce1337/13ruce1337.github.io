@@ -1,0 +1,102 @@
+---
+layout: default
+title: About Trevor
+css: /css/about.css
+js: /scripts/tymr.min.js
+---
+<style>
+html, body {
+  margin:0;
+  padding:0;
+  background:black;
+  font-family:'helvetica neue', 'helvetica light', 'helvetica';
+}
+body {
+}
+
+.container {
+  text-align:center;
+  margin:0 2%;
+  margin-top:15%;
+}
+@media(min-width: 1025px) {
+  .tymr {
+    display:table;
+    color:white;
+    font-size:15rem;
+    width:100%;
+  }
+}
+
+@media(max-width: 1024px) {
+  .tymr {
+    display:table;
+    color:white;
+    margin-top:10%;
+    font-size:5rem;
+    width:100%;
+  }
+}
+.tymr_separator {
+  display:table-cell;
+  vertical-align:middle;
+  width:8%;
+}
+.tymr_controls {
+  width:100%;
+  color:white;
+  font-size:1.5rem;
+  display:table;
+  text-align:center;
+}
+.tymr_control {
+  border:1px solid white;
+  width:1%;
+  display:table-cell;
+  padding:5px 15px;
+  cursor:pointer;
+}
+.tymr_control:hover {
+  background:#2D2D2D;
+}
+.tymr_input {
+  display:table-cell;
+  width:100%;
+  text-align:center;
+  border:none;
+  margin:0;
+  padding:0;
+  vertical-align:top;
+  background:inherit;
+  color:inherit;
+  font-size:inherit;
+}
+.tymr_input:focus {
+  outline:0;
+}
+</style>
+<div class='tymr_controls'>
+  <span class='tymr_controls tymr_control tymr_start'>
+    Start
+  </span>
+  <span class='tymr_controls tymr_control tymr_stop'>
+    Stop
+  </span>
+  <span class='tymr_controls tymr_control tymr_clear'>
+    Clear
+  </span>
+  <span class='tymr_controls tymr_control tymr_full_screen'>
+    Full Screen
+  </span>
+</div>
+<div class='container'>
+      <div class='tymr'>
+    <input class='tymr_input tymr_hour' type='number' max='23' min='0' value='0'/>
+    <span class='tymr_separator'>
+    </span>
+    <input class='tymr_input tymr_minute' type='number' max='59' min='0' value='0'/>
+    <span class='tymr_separator'>
+    </span>
+    <input class='tymr_input tymr_second' type='number' max='59' min='0' value='0'/>
+  </div>
+</div>
