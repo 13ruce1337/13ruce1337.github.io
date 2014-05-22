@@ -6,3 +6,8 @@ categories:
 - 
 img: /imgs/
 ---
+
+<div style='text-align:center;'>
+  <img src='{{site.base}}/imgs/'/>
+</div>
+
